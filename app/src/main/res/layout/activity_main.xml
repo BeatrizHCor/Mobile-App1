@@ -7,59 +7,45 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <View
-        android:id="@+id/view"
-        android:layout_width="248dp"
-        android:layout_height="659dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <EditText
         android:id="@+id/editTextNumber"
         android:layout_width="109dp"
         android:layout_height="47dp"
-        android:layout_marginStart="18dp"
-        android:layout_marginTop="272dp"
-        android:layout_marginEnd="20dp"
-        android:layout_marginBottom="342dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginBottom="44dp"
         android:ems="10"
         android:inputType="number"
         android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="@+id/view"
-        app:layout_constraintEnd_toEndOf="@+id/view"
-        app:layout_constraintStart_toStartOf="@+id/view"
-        app:layout_constraintTop_toTopOf="@+id/view" />
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
     <TextView
         android:id="@+id/score"
         android:layout_width="0dp"
         android:layout_height="21dp"
-        android:layout_marginStart="94dp"
-        android:layout_marginTop="498dp"
-        android:layout_marginEnd="154dp"
-        android:layout_marginBottom="140dp"
+        android:layout_marginStart="175dp"
+        android:layout_marginTop="534dp"
+        android:layout_marginEnd="236dp"
+        android:layout_marginBottom="176dp"
         android:textSize="36sp"
-        app:layout_constraintBottom_toBottomOf="@+id/view"
-        app:layout_constraintEnd_toEndOf="@+id/view"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="@+id/view"
-        app:layout_constraintTop_toTopOf="@+id/view"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/question"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="102dp"
-        android:layout_marginBottom="538dp"
+        android:layout_marginTop="124dp"
+        android:layout_marginBottom="559dp"
         android:textSize="36sp"
-        app:layout_constraintBottom_toBottomOf="@+id/view"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/view" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView"
@@ -77,31 +63,31 @@
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="14dp"
-        android:layout_marginTop="194dp"
-        android:layout_marginEnd="6dp"
-        android:layout_marginBottom="417dp"
+        android:layout_marginStart="95dp"
+        android:layout_marginTop="115dp"
+        android:layout_marginEnd="88dp"
+        android:layout_marginBottom="4dp"
         android:text="Sua resposta?"
         android:textSize="36sp"
-        app:layout_constraintBottom_toBottomOf="@+id/view"
-        app:layout_constraintEnd_toEndOf="@+id/view"
-        app:layout_constraintStart_toStartOf="@+id/view"
-        app:layout_constraintTop_toTopOf="@+id/view" />
+        app:layout_constraintBottom_toTopOf="@+id/editTextNumber"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <Button
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="65dp"
-        android:layout_marginTop="350dp"
-        android:layout_marginEnd="66dp"
-        android:layout_marginBottom="261dp"
+        android:layout_marginStart="146dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="148dp"
+        android:layout_marginBottom="297dp"
         android:onClick="answer"
         android:text="Responder"
-        app:layout_constraintBottom_toBottomOf="@+id/view"
-        app:layout_constraintEnd_toEndOf="@+id/view"
-        app:layout_constraintStart_toStartOf="@+id/view"
-        app:layout_constraintTop_toTopOf="@+id/view" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNumber" />
 
     <TextView
         android:id="@+id/correcao"
