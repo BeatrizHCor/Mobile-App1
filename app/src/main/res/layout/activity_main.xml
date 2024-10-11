@@ -11,28 +11,41 @@
         android:id="@+id/editTextNumber"
         android:layout_width="109dp"
         android:layout_height="47dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginBottom="44dp"
         android:ems="10"
         android:inputType="number"
         android:textSize="24sp"
-        tools:layout_editor_absoluteX="150dp"
-        tools:layout_editor_absoluteY="307dp" />
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
     <TextView
         android:id="@+id/score"
         android:layout_width="0dp"
         android:layout_height="21dp"
+        android:layout_marginStart="175dp"
+        android:layout_marginTop="534dp"
+        android:layout_marginEnd="236dp"
+        android:layout_marginBottom="176dp"
         android:textSize="36sp"
-        tools:layout_editor_absoluteX="175dp"
-        tools:layout_editor_absoluteY="534dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/question"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="124dp"
+        android:layout_marginBottom="559dp"
         android:textSize="36sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="124dp" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView"
@@ -50,18 +63,30 @@
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="95dp"
+        android:layout_marginTop="115dp"
+        android:layout_marginEnd="88dp"
+        android:layout_marginBottom="4dp"
         android:text="Sua resposta?"
         android:textSize="36sp"
-        tools:layout_editor_absoluteX="95dp"
-        tools:layout_editor_absoluteY="230dp" />
+        app:layout_constraintBottom_toTopOf="@+id/editTextNumber"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <Button
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="146dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="148dp"
+        android:layout_marginBottom="297dp"
         android:onClick="answer"
         android:text="Responder"
-        tools:layout_editor_absoluteX="146dp"
-        tools:layout_editor_absoluteY="386dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNumber" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
