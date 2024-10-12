@@ -16,7 +16,7 @@ import androidx.core.view.WindowInsetsCompat
 class MainActivity : AppCompatActivity() {
     private var number1 = 0;
     private var number2 = 0;
-    private var score = 0;
+    private var finalscore = 0;
     private var attempts = 0;
     private var next = false;
     private var originalBackgroundColor: Int = 0
@@ -54,7 +54,7 @@ class MainActivity : AppCompatActivity() {
 
                 if (submit === total) {
                     root.setBackgroundColor(Color.parseColor("#26A83B"))
-                    this.score += 20;
+                    this.finalscore += 20;
                     setOutputText(output,"A resposta está correta")
                 } else {
                     root.setBackgroundColor(Color.parseColor("#A81030"))
@@ -77,7 +77,7 @@ class MainActivity : AppCompatActivity() {
         } else {
             root.setBackgroundColor(originalBackgroundColor)
             val scoreText = findViewById<TextView>(R.id.score);
-            scoreText.text = "Seu Score final é: $score";
+            scoreText.text = "Seu Score final é: $finalscore";
         }
     }
 
